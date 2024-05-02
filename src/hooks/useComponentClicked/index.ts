@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useState } from 'react';
+import { RefObject, useEffect, useState } from "react";
 
 interface IStatusClicked {
   component: JSX.Element | JSX.Element[] | HTMLElement | HTMLElement[] | null;
@@ -31,7 +31,7 @@ const useComponentClicked = (
         setStatusClicked({
           component: ref.current!,
           isClicked: true,
-          message: messageInside || 'Element has been clicked',
+          message: messageInside || "Element has been clicked",
         });
       }
 
@@ -39,13 +39,13 @@ const useComponentClicked = (
         setStatusClicked({
           component: ref.current!,
           isClicked: false,
-          message: messageOutside || 'Clicked outside the element',
+          message: messageOutside || "Clicked outside the element",
         });
       }
     };
-    document.addEventListener('mousedown', handleDetectElement);
+    document.addEventListener("mousedown", handleDetectElement);
     return () => {
-      document.removeEventListener('mousedown', handleDetectElement);
+      document.removeEventListener("mousedown", handleDetectElement);
     };
   }, [ref, messageInside, messageOutside]);
 

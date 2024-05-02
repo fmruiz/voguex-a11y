@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 /**
  * Custom hook that offer a voice to notice if you are online or offline
  */
@@ -16,7 +16,7 @@ const useSpeakOnlineStatus = (): {
    * @param isOnline: boolean
    */
   const speakOnlineStatus = (isOnline: boolean) => {
-    const statusMessage = isOnline ? 'You are online' : 'You are offline';
+    const statusMessage = isOnline ? "You are online" : "You are offline";
     const announcement = new SpeechSynthesisUtterance(statusMessage);
     speechSynthesis.speak(announcement);
   };
