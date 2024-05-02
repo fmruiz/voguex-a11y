@@ -6,24 +6,24 @@ import { RefObject, useEffect } from 'react'
  * @param message - An specific message to reproduce with voice
  */
 const useSpeakClickInside = (
-    ref: RefObject<HTMLElement>,
-    message: string = 'INSIDE'
+  ref: RefObject<HTMLElement>,
+  message: string = 'INSIDE'
 ) => {
-    const speakMessage = (message: string) => {
-        const utterance = new SpeechSynthesisUtterance(message)
-        speechSynthesis.speak(utterance)
+  const speakMessage = (message: string) => {
+    const utterance = new SpeechSynthesisUtterance(message)
+    speechSynthesis.speak(utterance)
+  }
+  useEffect(() => {
+    const handleDetectClickInside = (event: MouseEvent) => {
+      if (ref.current && ref.current.contains(event.target as Node)) {
+        speakMessage(message)
+      }
     }
-    useEffect(() => {
-        const handleDetectClickInside = (event: MouseEvent) => {
-            if (ref.current && ref.current.contains(event.target as Node)) {
-                speakMessage(message)
-            }
-        }
-        document.addEventListener('mousedown', handleDetectClickInside)
-        return () => {
-            document.removeEventListener('mousedown', handleDetectClickInside)
-        }
-    }, [ref, message])
+    document.addEventListener('mousedown', handleDetectClickInside)
+    return () => {
+      document.removeEventListener('mousedown', handleDetectClickInside)
+    }
+  }, [ref, message])
 }
 
 export default useSpeakClickInside
