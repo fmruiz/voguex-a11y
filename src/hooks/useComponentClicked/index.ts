@@ -1,7 +1,7 @@
 import { RefObject, useEffect, useState } from 'react';
 
 interface IStatusClicked {
-    component: JSX.Element | HTMLElement | null;
+    component: JSX.Element | JSX.Element[] | HTMLElement | HTMLElement[] | null;
     isClicked: boolean | null;
     message: string | null;
 }
