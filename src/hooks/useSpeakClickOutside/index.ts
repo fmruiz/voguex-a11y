@@ -1,4 +1,4 @@
-import { RefObject, useEffect } from 'react'
+import { RefObject, useEffect } from 'react';
 
 /**
  * Custom hook that detect if you click outside of an specific component.
@@ -11,20 +11,20 @@ const useSpeakClickOutside = (
   message: string = 'OUTSIDE'
 ) => {
   const speakMessage = (message: string) => {
-    const utterance = new SpeechSynthesisUtterance(message)
-    speechSynthesis.speak(utterance)
-  }
+    const utterance = new SpeechSynthesisUtterance(message);
+    speechSynthesis.speak(utterance);
+  };
   useEffect(() => {
     const handleDetectClickOutside = (event: MouseEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
-        speakMessage(message)
+        speakMessage(message);
       }
-    }
-    document.addEventListener('mousedown', handleDetectClickOutside)
+    };
+    document.addEventListener('mousedown', handleDetectClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleDetectClickOutside)
-    }
-  }, [ref, message])
-}
+      document.removeEventListener('mousedown', handleDetectClickOutside);
+    };
+  }, [ref, message]);
+};
 
-export default useSpeakClickOutside
+export default useSpeakClickOutside;
