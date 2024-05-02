@@ -1,4 +1,4 @@
-import { RefObject, useEffect } from 'react';
+import { RefObject, useEffect } from 'react'
 /**
  * Custom hook that detect if you click inside of an specific component.
  *
@@ -10,20 +10,20 @@ const useSpeakClickInside = (
     message: string = 'INSIDE'
 ) => {
     const speakMessage = (message: string) => {
-        const utterance = new SpeechSynthesisUtterance(message);
-        speechSynthesis.speak(utterance);
-    };
+        const utterance = new SpeechSynthesisUtterance(message)
+        speechSynthesis.speak(utterance)
+    }
     useEffect(() => {
         const handleDetectClickInside = (event: MouseEvent) => {
             if (ref.current && ref.current.contains(event.target as Node)) {
-                speakMessage(message);
+                speakMessage(message)
             }
-        };
-        document.addEventListener('mousedown', handleDetectClickInside);
+        }
+        document.addEventListener('mousedown', handleDetectClickInside)
         return () => {
-            document.removeEventListener('mousedown', handleDetectClickInside);
-        };
-    }, [ref, message]);
-};
+            document.removeEventListener('mousedown', handleDetectClickInside)
+        }
+    }, [ref, message])
+}
 
-export default useSpeakClickInside;
+export default useSpeakClickInside
