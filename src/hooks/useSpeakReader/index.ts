@@ -21,7 +21,10 @@ const useScreenReader = (): {
         utterance.rate = speechRate;
         speechSynthesis.speak(utterance);
     };
-
+    /**
+     *  Fn that detect an element and read the content
+     * @param elementId: Is the id of the element
+     */
     const speakComponentContent = (elementId: string) => {
         const element = document.getElementById(elementId);
         if (element) {
@@ -29,7 +32,6 @@ const useScreenReader = (): {
             speakMessage(content);
         }
     };
-
     useEffect(() => {
         /**
          * Clear the announce when the component dismount
