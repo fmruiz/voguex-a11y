@@ -52,5 +52,10 @@
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.8.0",
     "vite": "^5.2.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npx prettier --write"
+    ]
   }
 }
