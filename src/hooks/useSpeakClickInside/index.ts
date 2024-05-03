@@ -7,7 +7,7 @@ import { RefObject, useEffect } from "react";
  */
 const useSpeakClickInside = (
   ref: RefObject<HTMLElement>,
-  message: string = "INSIDE"
+  message: string = "INSIDE",
 ) => {
   const speakMessage = (message: string) => {
     const utterance = new SpeechSynthesisUtterance(message);

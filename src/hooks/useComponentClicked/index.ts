@@ -15,7 +15,7 @@ interface IStatusClicked {
 const useComponentClicked = (
   ref: RefObject<HTMLElement>,
   messageInside?: string,
-  messageOutside?: string
+  messageOutside?: string,
 ): { statusClicked: IStatusClicked } => {
   /**
    * Status about the element
