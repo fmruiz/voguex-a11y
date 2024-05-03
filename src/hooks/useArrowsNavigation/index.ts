@@ -4,7 +4,7 @@ import { MutableRefObject, RefObject, useEffect, useState } from "react";
  * Using the arrow keys and, if you want it, speak the text content
  * @param elementRefs: []: collection of elements
  */
-const useKeyboardNavigation = <T extends HTMLElement>(
+const useArrowsNavigation = <T extends HTMLElement>(
   elementRefs: MutableRefObject<T>[] | RefObject<T>[],
 ) => {
   /**
@@ -88,4 +88,4 @@ const useKeyboardNavigation = <T extends HTMLElement>(
   return { speakNavigationStatus, setSpeakNavigationStatus };
 };
 
-export default useKeyboardNavigation;
+export default useArrowsNavigation;
