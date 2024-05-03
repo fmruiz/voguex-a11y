@@ -1,4 +1,5 @@
 import { RefObject, useEffect } from "react";
+import { speakMessage } from "@voguex/utils/speakMessage";
 /**
  * Custom hook that detect if you click inside of an specific component.
  *
@@ -9,10 +10,6 @@ const useSpeakClickInside = (
   ref: RefObject<HTMLElement>,
   message: string = "INSIDE",
 ) => {
-  const speakMessage = (message: string) => {
-    const utterance = new SpeechSynthesisUtterance(message);
-    speechSynthesis.speak(utterance);
-  };
   useEffect(() => {
     const handleDetectClickInside = (event: MouseEvent) => {
       if (ref.current && ref.current.contains(event.target as Node)) {

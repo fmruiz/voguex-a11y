@@ -1,4 +1,5 @@
 import { RefObject, useEffect } from "react";
+import { speakMessage } from "@voguex/utils/speakMessage";
 
 /**
  * Custom hook that detect if you click outside of an specific component.
@@ -10,10 +11,6 @@ const useSpeakClickOutside = (
   ref: RefObject<HTMLElement>,
   message: string = "OUTSIDE",
 ) => {
-  const speakMessage = (message: string) => {
-    const utterance = new SpeechSynthesisUtterance(message);
-    speechSynthesis.speak(utterance);
-  };
   useEffect(() => {
     const handleDetectClickOutside = (event: MouseEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
