@@ -11,6 +11,12 @@ interface AriaLiveHook {
 interface AriaLiveOptions {
   politeness?: "polite" | "assertive" | "off";
 }
+/**
+ * Custom hook that help to use aria-live attribute
+ * A live region is explicitly denoted using the aria-live attribute
+ * @param options
+ * @returns
+ */
 const useAriaLive = (options: AriaLiveOptions = {}): AriaLiveHook => {
   /**
    * Content that is updated
