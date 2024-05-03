@@ -20,7 +20,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@voguex/*": [
+        "*"
+      ],
+    }
   },
   "include": [
     "src",
@@ -29,5 +35,5 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
 }
