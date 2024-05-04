@@ -4,7 +4,7 @@ import { speakMessage } from "@voguex/utils/speakMessage";
  *  Custom hook that provide the possibility to make an announcement
  * @returns
  */
-const useSpeakAnnouncer = (): {
+const useSpeakFeedback = (): {
   somethingChange: boolean;
   setSomethingChange: (status: boolean) => void;
   setMessage: (message: string) => void;
@@ -30,4 +30,4 @@ const useSpeakAnnouncer = (): {
   return { somethingChange, setSomethingChange, setMessage } as const;
 };
 
-export default useSpeakAnnouncer;
+export default useSpeakFeedback;
