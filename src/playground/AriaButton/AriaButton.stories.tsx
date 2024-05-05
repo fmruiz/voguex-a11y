@@ -14,7 +14,7 @@ const AriaButton = () => {
     <>
       <p
         aria-label="title of the component"
-        aria-describedby="say that we have a list of images bellow"
+        aria-describedby="title say that we have a button bellow with aria attributes"
         style={{ textDecoration: "underline", textAlign: "center" }}
       >
         Button with aria attributes using useAriaButton:
