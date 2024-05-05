@@ -85,5 +85,8 @@
     "*.ts": [
       "npx prettier --write"
     ]
+  },
+  "dependencies": {
+    "@types/dom-speech-recognition": "^0.0.4"
   }
 }
