@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
  * the alt text of the image of current component
  * @returns
  */
-const useImageAltText = () => {
+const useReadImagesAlt = () => {
   /**
    * Set the fn to read the alt images
    */
@@ -34,4 +34,4 @@ const useImageAltText = () => {
   return { setReadAltImages } as const;
 };
 
-export default useImageAltText;
+export default useReadImagesAlt;
