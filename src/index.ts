@@ -1,4 +1,4 @@
-import useAccessibleAltImages from "./hooks/useAccesibleAltImages";
+import useAccessibleAltImages from "./hooks/useAccessibleAltImages";
 import useAriaButton from "./hooks/useAriaButton";
 import useAriaLive from "./hooks/useAriaLive";
 import useArrowsNavigation from "./hooks/useArrowsNavigation";
