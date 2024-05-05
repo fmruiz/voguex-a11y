@@ -21,10 +21,8 @@ const useReadImagesAlt = () => {
        */
       images.forEach((image, index) => {
         const altText = image.alt;
-        speakMessage(`The image number ${index} is about ${altText}`);
+        speakMessage(`The image number ${index + 1} have ${altText}`);
       });
-    } else {
-      speakMessage("We dont have any image here");
     }
     return () => {
       speechSynthesis.cancel();
