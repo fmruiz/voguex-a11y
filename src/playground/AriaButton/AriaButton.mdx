@@ -1,0 +1,41 @@
+import { Meta } from "@storybook/blocks";
+import AriaButton from "./AriaButton.stories.tsx";
+
+<Meta of={AriaButton} />
+
+# **useAriaButton**
+
+This hook seeks to promote the use of aria attributes in button components to make your application a little bit more accessible for everyone.
+
+## **Resources** :
+
+- [Building Accessible Buttons with ARIA: A11y Support Series](https://www.deque.com/blog/accessible-aria-buttons/)
+
+## **Example** :
+
+```tsx
+const ariaAttributes = useAriaButton({
+    ariaLabel: "Example Button",
+    ariaPressed: false,
+    ariaDisabled: false,
+  });
+
+  const handleClick = () => {
+    console.log('Hello world!');
+  };
+
+  return (
+    <section>
+      <p
+        aria-label="title of the component"
+        aria-describedby="title say that we have a button bellow with aria attributes"
+        style={{ textDecoration: "underline", textAlign: "center" }}
+      >
+        Button with aria attributes using useAriaButton:
+      </p>
+      <button {...ariaAttributes} onClick={handleClick}>
+        Click Me
+      </button>
+    </section>
+  );
+```

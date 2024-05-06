@@ -4,7 +4,6 @@ import { ComponentClicked } from "./ComponentClicked";
 const meta = {
   title: "Hooks/useComponentClicked",
   component: ComponentClicked,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

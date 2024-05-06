@@ -4,7 +4,6 @@ import { AccessibleAltImages } from "./AccesibleAltImages";
 const meta = {
   title: "Hooks/useAccessibleAltImages",
   component: AccessibleAltImages,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

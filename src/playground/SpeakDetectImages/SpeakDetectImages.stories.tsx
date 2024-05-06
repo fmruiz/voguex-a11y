@@ -4,7 +4,6 @@ import { SpeakDetectImages } from "./SpeakDetectImages";
 const meta = {
   title: "Hooks/useSpeakDetectImages",
   component: SpeakDetectImages,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

@@ -1,0 +1,43 @@
+import { Meta } from "@storybook/blocks";
+import ResponsiveImage from "./ResponsiveImage.stories.tsx";
+
+<Meta of={ResponsiveImage} />
+
+# **useResponsiveImage**
+
+This hook allows to detect the size of the window and depending that you can change between different images.
+
+## **Resources** :
+
+- [Responsive, Accessible Images](https://kevinsguides.com/guides/webdev/best-practices/responsive-accessible-images)
+- [Responsive images](https://web.dev/learn/design/responsive-images?hl=es-419)
+
+## **Example** :
+
+```tsx
+  const imageSources = [
+    { src: ImageOne, width: 320 },
+    { src: ImageTwo, width: 640 },
+    { src: ImageThree, width: 1024 },
+  ];
+
+  const selectedSrc = useResponsiveImage(imageSources);
+
+  return (
+    <section>
+      <p
+        aria-label="title of component"
+        aria-describedby="here we change between differents images depends of breakpoints"
+        style={{ textDecoration: "underline" }}
+      >
+        Change the size of screen to show differents images depends the
+        following breakpoints: 320, 640, 1024
+      </p>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {selectedSrc && (
+          <img width={300} src={selectedSrc} alt="Imagen responsive" />
+        )}
+      </div>
+    </section>
+  );
+```

@@ -10,7 +10,7 @@ export const AriaButton = () => {
   const handleClick = () => {};
 
   return (
-    <>
+    <section>
       <p
         aria-label="title of the component"
         aria-describedby="title say that we have a button bellow with aria attributes"
@@ -21,6 +21,6 @@ export const AriaButton = () => {
       <button {...ariaAttributes} onClick={handleClick}>
         Click Me
       </button>
-    </>
+    </section>
   );
 };

@@ -10,7 +10,7 @@ export const ArrowsNavigation = () => {
     useArrowsNavigation([ref1, ref2, ref3]);
 
   return (
-    <>
+    <section>
       <p
         aria-label="title of the component"
         aria-describedby="title of arrow navigation component"
@@ -36,6 +36,6 @@ export const ArrowsNavigation = () => {
           Element 3
         </button>
       </section>
-    </>
+    </section>
   );
 };

@@ -16,5 +16,11 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  managerHead: (head) => `
+    ${head}
+	  <title>VOGUEX-A11Y</title>
+	  <meta name="description" content="React hooks library" key="desc"/>
+  `,
 };
+
 export default config;

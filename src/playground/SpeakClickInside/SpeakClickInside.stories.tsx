@@ -4,7 +4,6 @@ import { SpeakClickInside } from "./SpeakClickInside";
 const meta = {
   title: "Hooks/useSpeakClickInside",
   component: SpeakClickInside,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

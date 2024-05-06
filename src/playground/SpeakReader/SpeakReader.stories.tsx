@@ -4,7 +4,6 @@ import { SpeakReader } from "./SpeakReader";
 const meta = {
   title: "Hooks/useSpeakReader",
   component: SpeakReader,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

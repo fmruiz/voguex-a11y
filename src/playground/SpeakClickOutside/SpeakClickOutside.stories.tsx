@@ -4,7 +4,6 @@ import { SpeakClickOutside } from "./SpeakClickOutside";
 const meta = {
   title: "Hooks/useSpeakClickOutside",
   component: SpeakClickOutside,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

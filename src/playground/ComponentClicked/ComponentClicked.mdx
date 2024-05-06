@@ -1,7 +1,19 @@
-import { useRef } from "react";
-import useComponentClicked from "@voguex/hooks/useComponentClicked";
+import { Meta } from "@storybook/blocks";
+import ComponentClicked from "./ComponentClicked.stories.tsx";
 
-export const ComponentClicked = () => {
+<Meta of={ComponentClicked} />
+
+# **useComponentClicked**
+
+This hook allows you to detect if you click inside or outside the component, this is important because, maybe you can use this hook with speech synthesis to speak an advice about it.
+
+## **Resources** :
+
+- [A Complete Guide To Accessible Front-End Components](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/)
+
+## **Example** :
+
+```tsx
   const elementRef = useRef(null);
 
   const { statusClicked } = useComponentClicked(
@@ -39,4 +51,4 @@ export const ComponentClicked = () => {
       </button>
     </section>
   );
-};
+```

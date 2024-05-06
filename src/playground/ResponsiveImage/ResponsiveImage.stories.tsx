@@ -4,7 +4,6 @@ import { ResponsiveImage } from "./ResponsiveImage";
 const meta = {
   title: "Hooks/useResponsiveImage",
   component: ResponsiveImage,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

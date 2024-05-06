@@ -4,7 +4,6 @@ import { AriaLive } from "./AriaLive";
 const meta = {
   title: "Hooks/useAriaLive",
   component: AriaLive,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

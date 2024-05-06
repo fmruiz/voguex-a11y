@@ -4,7 +4,6 @@ import { ReadImagesAlt } from "./ReadImagesAlt";
 const meta = {
   title: "Hooks/useReadImagesAlt",
   component: ReadImagesAlt,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block
