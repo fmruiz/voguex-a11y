@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **)storybook:** add SpeakSettings story ([f4d451f](https://github.com/fmruiz/voguex-a11y/commit/f4d451fe7cb12a49032a08f7f5ba66cde3301951))
+* **storybook:** add SpeakSettings story ([f4d451f](https://github.com/fmruiz/voguex-a11y/commit/f4d451fe7cb12a49032a08f7f5ba66cde3301951))
 * **hooks/tooling:** add useSpeakAnnouncer and change absolute path ([94dce8a](https://github.com/fmruiz/voguex-a11y/commit/94dce8ac59232baefeb28ac1ab134d302bce994d))
 * **hooks:** add comments to useSpeakReader ([c1f20ee](https://github.com/fmruiz/voguex-a11y/commit/c1f20ee2b5330f5266106d69b493c6c5cc98bfa9))
 * **hooks:** add useAccesibleAltImages ([25bb33c](https://github.com/fmruiz/voguex-a11y/commit/25bb33cc97a0a8a69d631b774dc1d317c84fc0f9))
