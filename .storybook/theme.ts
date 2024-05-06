@@ -4,7 +4,7 @@ export default create({
   base: "dark",
   brandTitle: "Voguex-A11Y",
   brandUrl: "https://github.com/fmruiz/voguex-a11y",
-  brandImage: "../src/assets/logo.png",
+  brandImage: "../lib/assets/logo.png",
   brandTarget: "_self",
   /**
    * Colors theme
