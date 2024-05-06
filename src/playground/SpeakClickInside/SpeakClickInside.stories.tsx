@@ -21,7 +21,7 @@ const SpeakClickInside = () => {
         style={{ textAlign: "center", textDecoration: "underline" }}
       >
         The useSpeakClickInside hook provides the functionality to speak a
-        message when you click on the component, please check it
+        message when you click on the component, please check it out!
       </p>
       <button
         aria-label="button to click"
