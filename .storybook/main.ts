@@ -18,11 +18,9 @@ const config: StorybookConfig = {
   },
   managerHead: (head) => `
     ${head}
-    <link rel="preload" href="/fonts/my-custom-manager-font.woff2" />
-	<title>Globo Js</title>
-
-	<meta name="description" content="React hooks library" key="desc" />
-
+	  <title>VOGUEX-A11Y</title>
+	  <meta name="description" content="React hooks library" key="desc"/>
   `,
 };
+
 export default config;
