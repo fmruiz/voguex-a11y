@@ -24,6 +24,7 @@ const useSpeakFeedback = (): {
     }
     return () => {
       speechSynthesis.cancel();
+      // setSomethingChange(false);
     };
   }, [somethingChange, message]);
 
