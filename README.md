@@ -1,6 +1,6 @@
 # VOGUEX-A11Y
 
-![logo](./public/logo.png)
+![logo](./src/assets/logo.png)
 
 ## Description
 **voguex-a11y** is your ticket to an inclusive internet! This library introduces a suite of hooks designed to tackle accessibility (a11y) challenges head-on. Improve your components and build better solutions with customizable hooks that effortlessly enhance accessibility features, ensuring everyone can engage with your app without any problem. From keyboard navigation to screen reader announcements and more, voguex-a11y empowers you to create digital experiences that truly welcome to every user.
