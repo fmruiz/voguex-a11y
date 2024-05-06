@@ -1,7 +1,7 @@
 {
   "name": "voguex-a11y",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Voguex-A11Y is a library that provide hooks to make your components more accessible",
   "author": {
@@ -25,6 +25,17 @@
     "type": "git",
     "url": "https://github.com/fmruiz/voguex-a11y"
   },
+  "main": "./dist/voguex-a11y.umd.cjs",
+  "module": "./dist/voguex-a11y.js",
+  "exports": {
+    ".": {
+      "import": "./dist/voguex-a11y.js",
+      "require": "./dist/voguex-a11y.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

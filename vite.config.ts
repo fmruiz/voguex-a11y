@@ -6,6 +6,13 @@ import { resolve } from "path";
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [{ find: "@voguex", replacement: resolve(__dirname, "./src") }],
+    alias: [{ find: "@voguex", replacement: resolve(__dirname, "./lib") }],
+  },
+  build: {
+    lib: {
+      entry: resolve(__dirname, "lib/index.ts"),
+      name: "voguex-a11y",
+      fileName: "voguex-a11y",
+    },
   },
 });

@@ -21,7 +21,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
+    "baseUrl": "./lib",
     "paths": {
       "@voguex/*": [
         "*"
@@ -29,7 +29,7 @@
     }
   },
   "include": [
-    "src",
+    "lib",
   ],
   "references": [
     {
