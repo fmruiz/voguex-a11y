@@ -34,11 +34,11 @@ const useSpeakCallback = (
 ): {
   language: string;
   languagesExampleValues: SupportedLanguages;
-  activeVoiceNavigation: boolean;
+  activeVoiceCallback: boolean;
   speakCommandError: boolean;
   continuousRecognition: boolean;
   setLanguage: (language: string) => void;
-  setActiveVoiceNavigation: (permission: boolean) => void;
+  setActiveVoiceCallback: (permission: boolean) => void;
   setContinuousRecognition: (continuousRecognition: boolean) => void;
 } => {
   /**
@@ -48,7 +48,7 @@ const useSpeakCallback = (
   /**
    * This is to activate or deactivate the voice navigation
    */
-  const [activeVoiceNavigation, setActiveVoiceNavigation] =
+  const [activeVoiceCallback, setActiveVoiceCallback] =
     useState<boolean>(false);
   /**
    * This is to set the language to detect our commands
@@ -87,16 +87,15 @@ const useSpeakCallback = (
      * Here is the initial point to access to
      * the microphone permission
      */
-    if (activeVoiceNavigation) {
+    if (activeVoiceCallback) {
       if (!permissionGranted) {
         requestMicrophonePermission();
       }
     }
     return () => {};
-  }, [permissionGranted, activeVoiceNavigation]);
-
+  }, [permissionGranted, activeVoiceCallback]);
   useEffect(() => {
-    if (activeVoiceNavigation) {
+    if (activeVoiceCallback) {
       if (permissionGranted) {
         const handleVoiceCommand = (event: SpeechRecognitionEvent) => {
           const command = event.results[event.results.length - 1][0].transcript
@@ -121,9 +120,6 @@ const useSpeakCallback = (
         recognition.onresult = handleVoiceCommand;
         recognition.continuous = continuousRecognition;
         recognition.start();
-        recognition.onend = () => {
-          setActiveVoiceNavigation(false);
-        };
         return () => {
           recognition.stop();
         };
@@ -133,18 +129,18 @@ const useSpeakCallback = (
     permissionGranted,
     voiceCommands,
     language,
-    activeVoiceNavigation,
+    activeVoiceCallback,
     continuousRecognition,
   ]);
 
   return {
     language,
     languagesExampleValues,
-    activeVoiceNavigation,
+    activeVoiceCallback,
     speakCommandError,
     continuousRecognition,
     setLanguage,
-    setActiveVoiceNavigation,
+    setActiveVoiceCallback,
     setContinuousRecognition,
   };
 };

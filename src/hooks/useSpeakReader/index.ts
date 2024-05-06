@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
  * Custom hook that we can use to read the content of components by id.
  * Or speak an specific message
  */
-const useScreenReader = (): {
+const useSpeakReader = (): {
   speakMessage: (message: string) => void;
   setSpeechRate: (rate: number) => void;
   speechRate: number;
@@ -49,4 +49,4 @@ const useScreenReader = (): {
   } as const;
 };
 
-export default useScreenReader;
+export default useSpeakReader;

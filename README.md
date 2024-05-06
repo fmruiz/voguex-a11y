@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# VOGUEX-A11Y
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![logo](./src/assets/logo.png)
 
-Currently, two official plugins are available:
+## Description
+**voguex-a11y** is your ticket to an inclusive internet! This library introduces a suite of hooks designed to tackle accessibility (a11y) challenges head-on. Improve your components and build better solutions with customizable hooks that effortlessly enhance accessibility features, ensuring everyone can engage with your app without any problem. From keyboard navigation to screen reader announcements and more, voguex-a11y empowers you to create digital experiences that truly welcome to every user.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Accessible State Management**: Manage accessible states such as focus, keyboard navigation, and screen reader announcements easily.
+- **Customizable**: Tailor accessibility behaviors to fit your specific application needs.
+- **Easy Integration**: Easy integration with existing React applications.
 
-## Expanding the ESLint configuration
+## Installation
+Install **voguex-a11y**, and together we will start to make great products. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+```bash
+  npm install voguex-a11y
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Changelog
+The changelog is regularly updated, please visit to see the latest changes.
+
+## Repository
+See the [Repository](https://github.com/fmruiz/voguex-a11y)
+ to see the source code.
+
+ ## Authors
+- [@fmruiz](https://github.com/fmruiz)

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
  * the alt text of the image of current component
  * @returns
  */
-const useImageAltText = () => {
+const useReadImagesAlt = () => {
   /**
    * Set the fn to read the alt images
    */
@@ -21,10 +21,8 @@ const useImageAltText = () => {
        */
       images.forEach((image, index) => {
         const altText = image.alt;
-        speakMessage(`The image number ${index} is about ${altText}`);
+        speakMessage(`The image number ${index + 1} have ${altText}`);
       });
-    } else {
-      speakMessage("We dont have any image here");
     }
     return () => {
       speechSynthesis.cancel();
@@ -34,4 +32,4 @@ const useImageAltText = () => {
   return { setReadAltImages } as const;
 };
 
-export default useImageAltText;
+export default useReadImagesAlt;
