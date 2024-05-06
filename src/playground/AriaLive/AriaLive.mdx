@@ -1,0 +1,64 @@
+import { Meta } from "@storybook/blocks";
+import AriaLive from "./AriaLive.stories.tsx";
+
+<Meta of={AriaLive} />
+
+# **useAriaLive**
+
+This hook seeks to promote the use of aria live attribute to indicate that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
+
+## **Example** :
+
+```tsx
+    const { content, updateContent, liveRegionRef } = useAriaLive({
+        politeness: "polite",
+    });
+
+    const ariaAttributes = useAriaButton({
+        ariaLabel: "Example Button",
+        ariaPressed: false,
+        ariaDisabled: false,
+    });
+    const [newChanges, setNewChanges] = useState("");
+
+    const simulateUpdate = (message: string) => {
+        setNewChanges(message);
+    };
+
+    const handleSimulateUpdate = () => {
+        updateContent(newChanges);
+    };
+
+    return (
+        <section style={{ width: "700px" }}>
+            <p
+                aria-label="title of the component"
+                aria-describedby="title of aria live component"
+                style={{ textDecoration: "underline", textAlign: "center" }}
+            >
+                Here we use an input to update the content bellow and this content are
+                tracking using useAriaLive hook and the button are using useAriaButton
+                hook
+            </p>
+            <p
+                style={{ textAlign: "center" }}
+                aria-label="paragraph using aria live"
+                ref={liveRegionRef}
+            >
+                {content}
+            </p>
+            <section style={{ display: "flex", justifyContent: "center" }}>
+                <input
+                aria-describedby="write new dinamic content"
+                aria-label="dinamic input content"
+                type="text"
+                value={newChanges}
+                onChange={(e) => simulateUpdate(e.target.value)}
+                />
+                <button {...ariaAttributes} onClick={handleSimulateUpdate}>
+                Update Content
+                </button>
+            </section>
+        </section>
+    );
+```

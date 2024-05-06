@@ -1,7 +1,15 @@
-import { useRef } from "react";
-import useComponentClicked from "@voguex/hooks/useComponentClicked";
+import { Meta } from "@storybook/blocks";
+import ComponentClicked from "./ComponentClicked.stories.tsx";
 
-export const ComponentClicked = () => {
+<Meta of={ComponentClicked} />
+
+# **useComponentClicked**
+
+This hook allows you to detect if you click inside or outside the component.
+
+## **Example** :
+
+```tsx
   const elementRef = useRef(null);
 
   const { statusClicked } = useComponentClicked(
@@ -39,4 +47,4 @@ export const ComponentClicked = () => {
       </button>
     </section>
   );
-};
+```

@@ -4,7 +4,6 @@ import { SpeakCurrentLocation } from "./SpeakCurrentLocation";
 const meta = {
   title: "Hooks/useSpeakCurrentLocation",
   component: SpeakCurrentLocation,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

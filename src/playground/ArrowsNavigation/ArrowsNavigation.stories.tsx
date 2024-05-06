@@ -4,7 +4,6 @@ import { ArrowsNavigation } from "./ArrowsNavigation";
 const meta = {
   title: "Hooks/useArrowsNavigation",
   component: ArrowsNavigation,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

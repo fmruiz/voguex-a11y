@@ -1,7 +1,15 @@
-import { useEffect } from "react";
-import useScreenMessages from "@voguex/hooks/useScreenMessages";
+import { Meta } from "@storybook/blocks";
+import ScreenMessages from "./ScreenMessages.stories.tsx";
 
-export const ScreenMessages = () => {
+<Meta of={ScreenMessages} />
+
+# **useScreenMessages**
+
+This hook allows to detect quickly that something happen in your application, you can use this with another hook to speak a message using speech synthesis.
+
+## **Example** :
+
+```tsx
   const { screenReaderMessages, setScreenReaderMessages } = useScreenMessages();
 
   const handleClick = () => {
@@ -50,4 +58,4 @@ export const ScreenMessages = () => {
       </div>
     </section>
   );
-};
+```

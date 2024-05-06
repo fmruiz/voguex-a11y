@@ -22,7 +22,7 @@ export const AriaLive = () => {
   };
 
   return (
-    <div style={{ width: "700px" }}>
+    <section style={{ width: "700px" }}>
       <p
         aria-label="title of the component"
         aria-describedby="title of aria live component"
@@ -51,6 +51,6 @@ export const AriaLive = () => {
           Update Content
         </button>
       </section>
-    </div>
+    </section>
   );
 };

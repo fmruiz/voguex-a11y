@@ -3,8 +3,6 @@ import { SpeakOnlineStatus } from "./SpeakOnlineStatus";
 
 const meta = {
   title: "Hooks/useSpeakOnlineStatus",
-  component: SpeakOnlineStatus,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

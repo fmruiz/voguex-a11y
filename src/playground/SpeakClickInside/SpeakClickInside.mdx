@@ -1,0 +1,42 @@
+import { Meta } from "@storybook/blocks";
+import SpeakClickInside from "./SpeakClickInside.stories.tsx";
+
+<Meta of={SpeakClickInside} />
+
+# **useSpeakClickInside**
+
+This hook use speech synthesis to speak a message if you clicked inside of a reference component.
+
+## **Example** :
+
+```tsx
+  const buttonRef = useRef(null);
+
+  useSpeakClickInside(buttonRef, "¡You clicked inside the button!");
+
+  return (
+    <section
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <p
+        aria-label="title of the component"
+        aria-describedby="description of the hook"
+        style={{ textAlign: "center", textDecoration: "underline" }}
+      >
+        The useSpeakClickInside hook provides the functionality to speak a
+        message when you click on the component, please check it out!
+      </p>
+      <button
+        aria-label="button to click"
+        ref={buttonRef}
+        style={{ width: "100px", margin: "0 auto" }}
+      >
+        Click here
+      </button>
+    </section>
+  );
+```

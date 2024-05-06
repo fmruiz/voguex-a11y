@@ -1,13 +1,24 @@
-import useAriaButton from "@voguex/hooks/useAriaButton";
+import { Meta } from "@storybook/blocks";
+import AriaButton from "./AriaButton.stories.tsx";
 
-export const AriaButton = () => {
-  const ariaAttributes = useAriaButton({
+<Meta of={AriaButton} />
+
+# **useAriaButton**
+
+This hook seeks to promote the use of aria attributes in button components to make your application a little bit more accessible for everyone.
+
+## **Example** :
+
+```tsx
+const ariaAttributes = useAriaButton({
     ariaLabel: "Example Button",
     ariaPressed: false,
     ariaDisabled: false,
   });
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    console.log('Hello world!');
+  };
 
   return (
     <section>
@@ -23,4 +34,4 @@ export const AriaButton = () => {
       </button>
     </section>
   );
-};
+```

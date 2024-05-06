@@ -1,0 +1,28 @@
+import { Meta } from "@storybook/blocks";
+import ReadImagesAlt from "./ReadImagesAlt.stories.tsx";
+
+<Meta of={ReadImagesAlt} />
+
+# **useReadImagesAlt**
+
+This hook allows to read using speech synthesis the alternative text of the images.
+
+## **Example** :
+
+```tsx
+    const { setReadAltImages } = useReadImagesAlt();
+
+    return (
+        <section>
+            <button
+                aria-label="button to read the alternative text of the images"
+                onClick={() => setReadAltImages(true)}
+            >
+                Read alternative text of the images
+            </button>
+            <img src="image1.jpg" alt="Image one - Alternative Text" />
+            <img src="image2.jpg" alt="Image second - Alternative Text" />
+            <img src="image3.jpg" alt="Image third - Alternative Text" />
+        </section>
+    );
+```

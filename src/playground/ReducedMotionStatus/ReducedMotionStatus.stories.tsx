@@ -4,7 +4,6 @@ import { ReducedMotionStatus } from "./ReducedMotionStatus";
 const meta = {
   title: "Hooks/useReducedMotionStatus",
   component: ReducedMotionStatus,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

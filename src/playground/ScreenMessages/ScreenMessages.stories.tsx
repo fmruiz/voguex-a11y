@@ -4,7 +4,6 @@ import { ScreenMessages } from "./ScreenMessages";
 const meta = {
   title: "Hooks/useScreenMessages",
   component: ScreenMessages,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block

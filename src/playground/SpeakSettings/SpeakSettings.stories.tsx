@@ -4,7 +4,6 @@ import { SpeakSettings } from "./SpeakSettings";
 const meta = {
   title: "Hooks/useSpeakSettings",
   component: SpeakSettings,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     // these are to test the deprecated features of the Description block
