@@ -1,6 +1,6 @@
 {
   "name": "voguex-a11y",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "description": "Voguex-A11Y is a library that provide hooks to make your components more accessible",
@@ -27,6 +27,7 @@
   },
   "main": "./dist/voguex-a11y.umd.cjs",
   "module": "./dist/voguex-a11y.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/voguex-a11y.js",
@@ -90,7 +91,8 @@
     "storybook": "^8.0.9",
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.8.0",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1"
   },
   "lint-staged": {
     "*.ts": [
