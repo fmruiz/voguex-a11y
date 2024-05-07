@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/fmruiz/voguex-a11y/compare/v1.0.0...v1.0.1) (2024-05-07)
+
+
+### Features
+
+* **root:** scaffolding changes ([b5c2284](https://github.com/fmruiz/voguex-a11y/commit/b5c2284f5798b887e70511bd2db8cf608b6c3a1e))
+
 ## 1.0.0 (2024-05-06)
 
 
