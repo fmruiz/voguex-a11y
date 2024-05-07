@@ -47,19 +47,15 @@ const useArrowsNavigation = <T extends HTMLElement>(
         switch (event.key) {
           case "ArrowUp":
             nextIndex = currentIndex - 1;
-            speakMessage(elementRefs[nextIndex].current?.textContent);
             break;
           case "ArrowDown":
             nextIndex = currentIndex + 1;
-            speakMessage(elementRefs[nextIndex].current?.textContent);
             break;
           case "ArrowLeft":
             nextIndex = currentIndex - 1;
-            speakMessage(elementRefs[nextIndex].current?.textContent);
             break;
           case "ArrowRight":
             nextIndex = currentIndex + 1;
-            speakMessage(elementRefs[nextIndex].current?.textContent);
             break;
           default:
             break;
@@ -67,7 +63,12 @@ const useArrowsNavigation = <T extends HTMLElement>(
         /**
          * Focus the following element if exist
          */
-        if (elementRefs[nextIndex!] && elementRefs[nextIndex!].current) {
+        if (
+          nextIndex! >= 0 &&
+          nextIndex! < elementRefs.length &&
+          elementRefs[nextIndex!].current
+        ) {
+          speakMessage(elementRefs[nextIndex!].current?.textContent);
           elementRefs[nextIndex!].current!.focus();
         }
       }
