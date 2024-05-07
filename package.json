@@ -49,7 +49,8 @@
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "push:npm": "np"
   },
   "peerDependencies": {
     "@types/react": "^17.0.0 || ^18.0.0",
