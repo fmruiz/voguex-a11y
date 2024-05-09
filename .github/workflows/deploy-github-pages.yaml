@@ -30,7 +30,7 @@ jobs:
           npm i
           npm run build-storybook
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v3
         with:
           folder: storybook-static
           token: ${{ secrets.GH_TOKEN }}
