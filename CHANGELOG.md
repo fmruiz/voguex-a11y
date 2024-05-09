@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/fmruiz/voguex-a11y/compare/v1.0.4...v1.0.5) (2024-05-09)
+
+
+### Features
+
+* **docs:** change readme ([fa8e3de](https://github.com/fmruiz/voguex-a11y/commit/fa8e3de83110be58cc89093a24dde39d3072f65e))
+
 ### [1.0.4](https://github.com/fmruiz/voguex-a11y/compare/v1.0.3...v1.0.4) (2024-05-09)
 
 
