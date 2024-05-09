@@ -1,0 +1,1 @@
+import{r as s}from"./index-uubelm5h.js";const n=({ariaLabel:t,ariaPressed:r=!1,ariaDisabled:e=!1})=>{const[a,u]=s.useState({});return s.useEffect(()=>(u({"aria-label":t,"aria-pressed":r,"aria-disabled":e}),()=>{}),[t,r,e]),a};export{n as u};
