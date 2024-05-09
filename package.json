@@ -36,6 +36,7 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/fmruiz/voguex-a11y",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
