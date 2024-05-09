@@ -36,7 +36,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/fmruiz/voguex-a11y",
+  "homepage": "https://fmruiz.github.io/voguex-a11y",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -51,6 +51,7 @@
     "release:major": "standard-version --release-as major",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "push:npm": "np"
   },
   "peerDependencies": {
@@ -66,10 +67,10 @@
     "@storybook/addon-links": "^8.0.9",
     "@storybook/addon-onboarding": "^8.0.9",
     "@storybook/blocks": "^8.0.9",
-    "@types/dom-speech-recognition": "^0.0.4",
     "@storybook/react": "^8.0.9",
     "@storybook/react-vite": "^8.0.9",
     "@storybook/test": "^8.0.9",
+    "@types/dom-speech-recognition": "^0.0.4",
     "@types/node": "^20.12.8",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
@@ -83,6 +84,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "eslint-plugin-storybook": "^0.8.0",
+    "gh-pages": "^6.1.1",
     "globals": "^15.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
