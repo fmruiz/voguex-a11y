@@ -4,7 +4,13 @@ import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react(), dts({ include: ["lib"] })],
+  plugins: [
+    react(),
+    dts({
+      include: ["lib"],
+      exclude: ["./lib/playground", "./lib/utils", "./lib/assets"],
+    }),
+  ],
   resolve: {
     alias: [{ find: "@voguex", replacement: resolve(__dirname, "./lib") }],
   },
