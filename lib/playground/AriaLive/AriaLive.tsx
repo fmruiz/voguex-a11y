@@ -2,10 +2,18 @@ import { useState } from "react";
 import useAriaButton from "@voguex/hooks/useAriaButton";
 import useAriaLive from "@voguex/hooks/useAriaLive";
 
-export const AriaLive = () => {
-  const { content, updateContent, liveRegionRef } = useAriaLive({
-    politeness: "polite",
-  });
+interface IAriaLiveProps {
+  politeness?: "assertive" | "polite" | "off" | undefined;
+}
+
+export const AriaLive = ({ politeness = "assertive" }: IAriaLiveProps) => {
+  const { content, updateContent, liveRegionRef } = useAriaLive(
+    politeness
+      ? { politeness }
+      : {
+          politeness: "polite",
+        },
+  );
   const ariaAttributes = useAriaButton({
     ariaLabel: "Example Button",
     ariaPressed: false,
@@ -36,6 +44,7 @@ export const AriaLive = () => {
         style={{ textAlign: "center" }}
         aria-label="paragraph using aria live"
         ref={liveRegionRef}
+        data-testid="live-region"
       >
         {content}
       </p>
