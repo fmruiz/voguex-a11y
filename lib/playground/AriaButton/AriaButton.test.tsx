@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { AriaButton } from "./AriaButton";
 
-describe("AccessibleAltImages", () => {
+describe("AriaButton", () => {
   const { getByTestId } = render(<AriaButton />);
 
   const btnComponent = getByTestId("button-aria");
