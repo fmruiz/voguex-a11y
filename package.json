@@ -29,6 +29,7 @@
   "typings": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/voguex-a11y.js",
       "require": "./dist/voguex-a11y.umd.cjs"
     }
