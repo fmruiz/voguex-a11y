@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/fmruiz/voguex-a11y/compare/v1.0.4...v1.0.5) (2024-05-09)
+
+
+### Features
+
+* **docs:** change readme ([fa8e3de](https://github.com/fmruiz/voguex-a11y/commit/fa8e3de83110be58cc89093a24dde39d3072f65e))
+
+### [1.0.4](https://github.com/fmruiz/voguex-a11y/compare/v1.0.3...v1.0.4) (2024-05-09)
+
+
+### Features
+
+* **docs:** add homepage ([8a56c25](https://github.com/fmruiz/voguex-a11y/commit/8a56c253858023546622585b521f3a76ae3bf1fb))
+* **root:** add deploy gh pages ([a5824e7](https://github.com/fmruiz/voguex-a11y/commit/a5824e7541017d53dd14e2280943084255b32a75))
+* **root:** add deploy gh pages ([59e875d](https://github.com/fmruiz/voguex-a11y/commit/59e875da2e0d4550d633ce18b27ba3fa5cce24cf))
+* **root:** add folder to gitignore and gh pages dependency ([6e90669](https://github.com/fmruiz/voguex-a11y/commit/6e90669041b3510e9cb935804a926e094b6b28fc))
+* **root:** modify gh workflow ([aaea765](https://github.com/fmruiz/voguex-a11y/commit/aaea76517b6bd1ab316fc80fd26df636bb400c75))
+* **root:** modify gh workflow ([b36bbe4](https://github.com/fmruiz/voguex-a11y/commit/b36bbe4439c4f20faf8422315baa75d1adb86b07))
+* **root:** modify vite config ([e20bacc](https://github.com/fmruiz/voguex-a11y/commit/e20baccd7fa85cfb96396e2d7ed28925fc69238f))
+
+
+### Bug Fixes
+
+* **root:** test v3 ([460c946](https://github.com/fmruiz/voguex-a11y/commit/460c9464e883cf9495da3954f7e763e6c52ec8ba))
+* **root:** test v3 ([958ab8e](https://github.com/fmruiz/voguex-a11y/commit/958ab8ed128b7edec188609debfa51c141822fbd))
+* **root:** test v4 ([605ac30](https://github.com/fmruiz/voguex-a11y/commit/605ac309746e9dcd75456cbb0f4d44820fec75ef))
+* **root:** test v4 ([47704a0](https://github.com/fmruiz/voguex-a11y/commit/47704a09c09afffc5194c5e062d680b91085788d))
+* **root:** test write value ([671d1f7](https://github.com/fmruiz/voguex-a11y/commit/671d1f7e837576a98ccd952ae2275f6249becdd8))
+* **root:** test write value ([13baa3d](https://github.com/fmruiz/voguex-a11y/commit/13baa3d63fe12bb1323f112ce8886ca18a506347))
+
 ### [1.0.3](https://github.com/fmruiz/voguex-a11y/compare/v1.0.2...v1.0.3) (2024-05-07)
 
 ### [1.0.2](https://github.com/fmruiz/voguex-a11y/compare/v1.0.1...v1.0.2) (2024-05-07)

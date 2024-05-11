@@ -1,7 +1,7 @@
 {
   "name": "voguex-a11y",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.5",
   "type": "module",
   "description": "Voguex-A11Y is a library that provide hooks to make your components more accessible",
   "author": {

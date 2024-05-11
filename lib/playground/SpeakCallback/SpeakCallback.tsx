@@ -30,6 +30,7 @@ export const SpeakCallback = () => {
     continuousRecognition,
     setActiveVoiceCallback,
     setContinuousRecognition,
+    webkitSpeechRecognitionExist,
   } = useSpeakCallback(voiceCommands);
 
   return (
@@ -43,10 +44,27 @@ export const SpeakCallback = () => {
         only available in chrome, if you are using another navigator, please
         test this component in chrome navigator:
       </p>
-      <p style={{ textAlign: "center" }}>
+      {!webkitSpeechRecognitionExist && (
+        <p
+          aria-label="webkitspeechrecognition status"
+          aria-describedby="this is to know if our navigator have or not the webkitspeechrecognition API"
+          style={{ textAlign: "center", color: "red" }}
+        >
+          WebkitSpeechRecognition API doesnt exist, please change your navigator
+        </p>
+      )}
+      <p
+        aria-label="voice Callback status"
+        aria-describedby="this is to know voice callback status"
+        style={{ textAlign: "center" }}
+      >
         Voice Callback status: {activeVoiceCallback ? "ON" : "OFF"}
       </p>
-      <p style={{ textAlign: "center" }}>
+      <p
+        aria-label="continuous Recognition status"
+        aria-describedby="this is to know continuous recognition status"
+        style={{ textAlign: "center" }}
+      >
         Continuous Recognition status: {continuousRecognition ? "ON" : "OFF"}
       </p>
       <section
