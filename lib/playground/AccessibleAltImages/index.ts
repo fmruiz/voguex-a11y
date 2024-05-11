@@ -1,1 +1,1 @@
-export * from "./AccesibleAltImages";
+export * from "./AccessibleAltImages";

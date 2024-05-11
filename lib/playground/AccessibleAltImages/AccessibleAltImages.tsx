@@ -1,33 +1,26 @@
-import { useEffect, useState } from "react";
 import useAccessibleAltImages from "@voguex/hooks/useAccessibleAltImages";
 import ExampleImage from "../../assets/example-1.jpg";
 
 export const AccessibleAltImages = () => {
-  const [detectEvent, setDetectEvent] = useState(false);
-
   const images = [
     {
       id: "accessible-image-1",
-      alt: `${detectEvent ? "Accessible Image one after event" : "Default Alt Image 1"}`,
+      alt: "Accessible Image one after event",
       image: "",
     },
     {
       id: "accessible-image-2",
-      alt: `${detectEvent ? "Accessible Image two after event" : "Default Alt Image 2"}`,
+      alt: "Accessible Image two after event",
       image: ExampleImage,
     },
     {
       id: "accessible-image-3",
-      alt: `${detectEvent ? "Accessible Image three after event" : "Default Alt Image 3"}`,
+      alt: "Accessible Image three after event",
       image: "",
     },
   ];
 
   const { updateAltImages } = useAccessibleAltImages();
-
-  useEffect(() => {
-    updateAltImages(images);
-  }, [updateAltImages]);
 
   return (
     <section style={{ display: "flex", flexDirection: "column" }}>
@@ -46,15 +39,17 @@ export const AccessibleAltImages = () => {
             key={image.id}
             id={image.id}
             src={image.image}
-            alt={"image.alt"}
+            alt="default alt image"
             width={200}
+            data-testid={image.id}
           />
         ))}
       </div>
       <button
         aria-label="button to update alt images"
         style={{ width: "200px", margin: "0 auto" }}
-        onClick={() => setDetectEvent(!detectEvent)}
+        onClick={() => updateAltImages(images)}
+        data-testid="button-event"
       >
         Update Alt attribute of images
       </button>
