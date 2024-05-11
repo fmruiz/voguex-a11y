@@ -18,7 +18,11 @@ export const AriaButton = () => {
       >
         Button with aria attributes using useAriaButton:
       </p>
-      <button {...ariaAttributes} onClick={handleClick}>
+      <button
+        {...ariaAttributes}
+        onClick={handleClick}
+        data-testid="button-aria"
+      >
         Click Me
       </button>
     </section>
