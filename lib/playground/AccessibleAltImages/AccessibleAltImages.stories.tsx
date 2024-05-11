@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { AccessibleAltImages } from "./AccesibleAltImages";
+import { AccessibleAltImages } from "./AccessibleAltImages";
 
 const meta = {
   title: "Hooks/useAccessibleAltImages",
