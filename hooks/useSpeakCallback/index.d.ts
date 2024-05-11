@@ -13,6 +13,7 @@ declare const useSpeakCallback: (voiceCommands: Record<string, () => void>) => {
     activeVoiceCallback: boolean;
     speakCommandError: boolean;
     continuousRecognition: boolean;
+    webkitSpeechRecognitionExist: boolean;
     setLanguage: (language: string) => void;
     setActiveVoiceCallback: (permission: boolean) => void;
     setContinuousRecognition: (continuousRecognition: boolean) => void;
