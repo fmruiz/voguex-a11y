@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/fmruiz/voguex-a11y/compare/v1.0.5...v1.0.6) (2024-05-11)
+
+
+### Bug Fixes
+
+* **hooks:** manage error webkitSpeechRecognition API to useSpeakCallback ([1b4d6b7](https://github.com/fmruiz/voguex-a11y/commit/1b4d6b7adc1358360c35f7f8c864bc8469f82384))
+
 ### [1.0.5](https://github.com/fmruiz/voguex-a11y/compare/v1.0.4...v1.0.5) (2024-05-09)
 
 
