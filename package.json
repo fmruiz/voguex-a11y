@@ -26,7 +26,7 @@
     "url": "https://github.com/fmruiz/voguex-a11y"
   },
   "main": "./dist/voguex-a11y.js",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
